@@ -1,0 +1,66 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{gvv}
+
+\begin{document}
+
+\title{Assignment 11.9.5\_1Q}
+\author{EE22BTECH11219 - Rada Sai Sujan$^{}$% <-this % stops a space
+}
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Question}
+Show that the sum of $\brak {m+n}^{th}$ and $\brak {m-n}^{th}$ terms of an $A.P.,$ is equal to twice the $m^{th}$ terms.    \\
+\end{frame}
+
+\begin{frame}{allowframebreaks}
+\frametitle{Solution: Theory}
+\begin{table}[ht]
+    \centering
+    \def\arraystretch{1.5}
+    \input{tables/TABLE1.tex}
+    \caption{Parameter Table1}
+    \label{tab:11.9.5.1.1}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Theory}
+For an $AP$,
+\begin{align}
+    x\brak{n}&=[x\brak{0}+nd]u\brak{n}   \\
+    \implies x\brak{m+n}+x\brak{m-n}&=[x\brak{0}+\brak{m+n}d]+[x\brak{0}+\brak{m-n}d] \\
+    &=2[x\brak{0}+md]   \\
+    \therefore x\brak{m+n}+x\brak{m-n}&=2x\brak{m}
+\end{align}
+\end{frame}
+
+\begin{frame}
+\frametitle{Theory}
+\begin{table}[ht]
+    \centering
+    \def\arraystretch{1.5}
+    \input{tables/TABLE2.tex}
+    \caption{Verified Values}
+    \label{tab:11.9.5.1.2}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Code}
+\begin{figure}[ht]
+                        \centering
+                        \includegraphics[width=\columnwidth]{figs/a.png}
+                        \caption{DIPLACEMENT $vs$ TIME-graph1}
+                        \label{fig:1}
+\end{figure}
+\end{frame}
+\end{document}
